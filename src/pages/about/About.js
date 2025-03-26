@@ -11,7 +11,19 @@ import Daniellewis from '../../assets/images/avatar-1.png'
 import Jessicamiller from '../../assets/images/avatar-2.png'
 import Emilyevans from '../../assets/images/avatar-3.png'
 import Henrywilliam from '../../assets/images/avatar-4.png'
+import testimonialsmodal from '../../assets/images/icon-quote.svg'
+import ClientCard from '../../component/card/ClientCard'
+import ClientA from '../../assets/images/logo-1-color.png'
+import ClientB from '../../assets/images/logo-2-color.png'
+import ClientC from '../../assets/images/logo-3-color.png'
+import ClientD from '../../assets/images/logo-4-color.png'
+import ClientE from '../../assets/images/logo-5-color.png'
+import ClientF from '../../assets/images/logo-6-color.png'
 export default function About() {
+
+const ClientcardItems = [{
+    image: ClientA},{
+    image: ClientB},{image: ClientC},{image: ClientD},{image: ClientE},{image: ClientF}]
 
  const TestimonialcardItems = [{
         name:"Daniel lewis",
@@ -57,13 +69,13 @@ const NavbarItems = [{
   return (
     <div>
 
-<div class="main-content">
+<div className="main-content">
 
 
     
-<nav class="navbar">
+<nav className="navbar">
 
-<ul class="navbar-list">
+<ul className="navbar-list">
 
 {
     NavbarItems.map((item, index) => {
@@ -77,13 +89,13 @@ const NavbarItems = [{
 
 </nav>
 
-<article class="about  active" data-page="about">
+<article className="about  active" data-page="about">
 
 <header>
-          <h2 className="h2 article-title">About me</h2>
+          <h2 classNameName="h2 article-title">About me</h2>
         </header>
 
-<section className="about-text">
+<section classNameName="about-text">
           <p>
             I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
             I enjoy
@@ -100,11 +112,11 @@ const NavbarItems = [{
         </section>
 
 
-        <section class="service">
+        <section className="service">
 
-<h3 class="h3 service-title">What i'm doing</h3>
+<h3 className="h3 service-title">What i'm doing</h3>
 
-<ul class="service-list">
+<ul className="service-list">
 
 {
     ServicecardItems.map((item, index) => {
@@ -121,12 +133,12 @@ const NavbarItems = [{
 </section>
 
 
-<section class="testimonials">
+<section className="testimonials">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 className="h3 testimonials-title">Testimonials</h3>
 
  
-         <ul class="testimonials-list has-scrollbar">
+         <ul className="testimonials-list has-scrollbar">
 
 {TestimonialcardItems.map((item, index) => {
     return <Testimonialcard key={index} name={item.name} review={item.review} image={item.image} />
@@ -139,6 +151,17 @@ const NavbarItems = [{
 
         </section>
 
+{/* testimonials-modal */}
+
+ 
+
+
+
+{/* Client */}
+
+
+
+
 
 
 
@@ -146,9 +169,6 @@ const NavbarItems = [{
 
 </article>
 </div>
-
-
-
     </div>
   )
 }
