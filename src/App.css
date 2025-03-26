@@ -1885,3 +1885,10 @@
     .timeline-text { max-width: 700px; }
   
   }
+.container{
+  display: flex;
+  justify-content: center;
+
+ 
+}
+ 

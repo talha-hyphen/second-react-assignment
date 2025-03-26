@@ -68,8 +68,9 @@ const NavbarItems = [{
 
   return (
     <div>
-
-<div className="main-content">
+      
+<div className="container">
+<div className="main-content" >
 
 
     
@@ -169,6 +170,6 @@ const NavbarItems = [{
 
 </article>
 </div>
-    </div>
+    </div></div>
   )
 }
