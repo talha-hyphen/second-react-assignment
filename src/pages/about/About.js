@@ -92,10 +92,10 @@ const NavbarItems = [{
 <article className="about  active" data-page="about">
 
 <header>
-          <h2 classNameName="h2 article-title">About me</h2>
+          <h2 className="h2 article-title">About me</h2>
         </header>
 
-<section classNameName="about-text">
+<section className="about-text">
           <p>
             I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
             I enjoy
