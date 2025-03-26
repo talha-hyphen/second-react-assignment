@@ -21,9 +21,8 @@ import ClientE from '../../assets/images/logo-5-color.png'
 import ClientF from '../../assets/images/logo-6-color.png'
 export default function About() {
 
-const ClientcardItems = [{
-    image: ClientA},{
-    image: ClientB},{image: ClientC},{image: ClientD},{image: ClientE},{image: ClientF}]
+const ClientcardItems = [ClientA, ClientB, ClientC, ClientD, ClientE, ClientF]
+    
 
  const TestimonialcardItems = [{
         name:"Daniel lewis",
@@ -160,6 +159,20 @@ const NavbarItems = [{
 
 {/* Client */}
 
+<section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+{ClientcardItems.map((item, index) => {
+    return <ClientCard key={index} image={item} />
+
+})} 
+
+          </ul>
+
+        </section>
 
 
 

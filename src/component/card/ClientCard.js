@@ -1,12 +1,11 @@
 import React from 'react'
 
-export default function ClientCard() {
+export default function ClientCard(props) {
   return (
-    <div><li className="clients-item">
+    <li className="clients-item">
     <a href="#">
-      <img src={ClientcardItems} alt="client logo"/>
+      <img src={props.image} alt="client logo"/>
     </a>
   </li>
-</div>
   )
 }
